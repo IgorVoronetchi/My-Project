@@ -6,12 +6,32 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url("images/Background_1.jfif");
+    /* background-image: url("images/Background_1.jfif"); */
     /*urmatoarele 3 le pot sterge*/
     background-position: center;
     background-size: cover;
     position: relative;
 }
+/******************* background video style *************************/
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(max-aspect-ratio: 16/9){
+.back-video{
+    width: auto;
+    height: 100%;
+}
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
 nav{
     display: flex;
     padding: 2% 6%;
